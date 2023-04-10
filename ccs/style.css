@@ -36,11 +36,19 @@ body {
     font-size: 20px;
 }
 
+.headerLink:hover {
+    color: #735F32;
+}
+
+.headerLink:active {
+    color: #282A3A;
+}
+
 #cuerpo {
     padding: 20px 70px 20px 70px;
 }
 
-#formulario {
+#formularioSuscripcion {
     display: flex;
     justify-content: center;
 }
@@ -53,6 +61,34 @@ body {
     gap:30px;
     align-items: center;
     font-size: 20px;
+    border-radius: 5px;
+}
+
+#botonSuscribirse {
+    width: 180px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #735F32;
+    border: none;
+    border-radius: 5px;
+}
+
+#botonSuscribirse:hover {
+    background-color: white;
+    color: #735F32;
+}
+
+#suscribirseNewslatter input {
+    width: 290px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input:invalid {
+    border: 2px solid #b71f1f;
 }
 
 #footer {
@@ -94,4 +130,10 @@ body {
 
 input:invalid {
     border-color: #b71f1f;
+}
+
+@media (max-width: 700px) {
+    #suscribirseNewslatter {
+        flex-direction: column;
+    }
 }
